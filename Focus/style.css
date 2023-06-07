@@ -1,0 +1,280 @@
+body {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 22px 0;
+  background-color: #0e0e0e;
+  border-bottom: 1px solid #262626;
+}
+header .menu .logo a, header .menu nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 2s ease;
+}
+header .menu .logo {
+  color: white;
+  font-size: 24px;
+}
+header .menu .logo a {
+  font-size: 34px;
+}
+header .menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+header .menu nav ul li {
+  margin-right: 20px;
+}
+header .menu nav ul li a {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+header .menu nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+header .menu nav ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#create {
+  background-color: #0e0e0e;
+  height: 90vh;
+  padding: 30px 10px;
+}
+#create .textbox {
+  color: #fff;
+  width: 100%;
+}
+#create .textbox h1 {
+  font-size: 120px;
+  font-weight: 600;
+  word-spacing: -30px;
+}
+#create .textbox .line {
+  border: 10px solid #fff;
+  width: 20%;
+  margin: 40px 0;
+}
+#create .textbox h3 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  width: 700px;
+}
+#create .textbox .btn {
+  background-color: #ff9285;
+  border-radius: 0;
+  padding: 14px 34px;
+  width: 140px;
+}
+#create .textbox .btn h5 {
+  color: #0e0e0e;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#portfolio {
+  background-color: #0e0e0e;
+}
+#portfolio .col-md-6 {
+  padding: 30px;
+}
+#portfolio .col-md-6 .image-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #262626;
+  padding: 20px;
+  border-radius: 40px;
+}
+#portfolio .col-md-6 .image-container .image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.4s ease;
+  border-radius: 20px;
+}
+#portfolio .col-md-6 .image-container .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 32px;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+#portfolio .col-md-6 .image-container:hover {
+  cursor: pointer;
+}
+#portfolio .col-md-6 .image-container:hover .image {
+  opacity: 0.1;
+}
+#portfolio .col-md-6 .image-container:hover .text {
+  opacity: 1;
+}
+#portfolio .col-md-6 h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 36px;
+  font-family: Playfair Display, serif;
+}
+#portfolio .btn {
+  border: 1px solid #fff;
+  padding: 16px 30px;
+  border-radius: 0;
+  transition: 1s;
+}
+#portfolio .btn h5 {
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1.6px;
+}
+#portfolio .btn:hover {
+  background-color: #fff;
+}
+#portfolio .btn:hover h5 {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+#what h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  padding: 50px 0;
+  margin: 40px 0;
+}
+#what .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#what .box .imgbox img {
+  border-radius: 50%;
+}
+#what .box .textbox {
+  padding: 20px 0;
+  color: rgb(110, 110, 110);
+}
+#what .box .textbox h2 {
+  font-weight: 700;
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  color: #0e0e0e;
+}
+#what .box .textbox h4 {
+  margin-top: 18px;
+}
+#what .box .textbox p {
+  font-size: 19px;
+  padding: 14px;
+  line-height: 1.4;
+}
+
+#frequently {
+  height: 2vh;
+  background-color: #090909;
+}
+#frequently h1 {
+  color: #fff;
+}
+
+#choose {
+  padding: 80px 0;
+  text-align: center;
+}
+#choose h1 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Playfair Display", serif;
+}
+#choose .textbox {
+  padding: 50px;
+  color: #0e0e0e;
+}
+#choose .textbox h2 {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+}
+#choose .textbox h3 {
+  font-weight: 700;
+  font-size: 38px;
+  margin: 18px 0;
+}
+#choose .textbox h3 span {
+  font-size: 24px;
+  margin-right: 4px;
+}
+#choose .textbox h4 {
+  font-size: 22px;
+}
+#choose .textbox h5 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+#choose .textbox ul li {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 500;
+}
+#choose .standard {
+  background-color: #e8e7e8;
+}
+#choose .multisite {
+  background-color: #ff9999;
+}
+#choose .extended {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+#focus {
+  background-color: #ff9285;
+}
+#focus .textbox {
+  padding: 100px;
+}
+#focus .textbox h1 {
+  font-weight: 900;
+  font-size: 28px;
+}
+#focus .textbox h3 {
+  margin: 20px 0;
+}
+#focus .textbox .btn {
+  border: 1px solid #000000;
+  padding: 12px 45px;
+  border-radius: 0;
+}
+#focus .textbox .btn:hover {
+  background-color: #262626;
+  color: #fff;
+}
+#focus .textbox .btn h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=style.css.map */
